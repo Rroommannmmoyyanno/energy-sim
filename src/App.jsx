@@ -42,11 +42,11 @@ export default function App() {
         ⚡ Energy Simulator — Motor + Generator → kW/kWh → Real-world output
       </div>
 
-      <h1 style={{ marginTop: 12 }}>Energy Project Simulator</h1>
-      <p>
-        Seleccioná motor y generador. Ajustá PF, horas y factor de carga. La app
-        calcula energía disponible y sugiere escenarios productivos.
-      </p>
+      <h1 style={{ marginTop: 12 }}>SimEnergy — Simulador de generación y usos productivos</h1>
+<p>
+  Seleccionás un motor y un generador, ajustás condiciones de operación y obtenés potencia (kW) y energía (kWh).
+  Con eso, la app propone escenarios de uso y capacidad estimada por rubro.
+</p>
 
       <div className="grid" style={{ marginTop: 16 }}>
         <div className="card">
@@ -189,7 +189,10 @@ export default function App() {
 
           <hr />
           <small>
-            Roadmap: costos (fuel), $/kWh, ROI por caso, y perfiles 50/60 Hz por motor.
+            <small>
+  Próximamente: costos de combustible, $/kWh y reporte exportable para proyectos.
+</small>
+
           </small>
         </div>
       </div>
