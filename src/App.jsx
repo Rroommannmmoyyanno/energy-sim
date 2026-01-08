@@ -38,9 +38,7 @@ export default function App() {
 
   return (
     <div className="container">
-      <div className="badge">
-        ⚡ Energy Simulator — Motor + Generator → kW/kWh → Real-world output
-      </div>
+      
 <h1 style={{ marginTop: 12 }}>
   SimEnergy — Industrial Energy & Production Simulator
 </h1>
