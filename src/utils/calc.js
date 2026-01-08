@@ -19,8 +19,13 @@ export function compute({
   return { availableKw, avgKw, kwhDay, kwhMonth, genLimitKw };
 }
 
+export function maxUnitsForUseCase({ availableKw, kwhDay }, useCase) {
+  const byKw = Math.floor(availableKw / useCase.kwPeakPerUnit);
+  const byEnergy = Math.floor(kwhDay / useCase.kwhDayPerUnit);
+
   let maxUnits = Math.max(0, Math.min(byKw, byEnergy));
 
+  // Optional “industrial realism” cap (e.g. textile max stations)
   if (useCase.maxUnitsCap) {
     maxUnits = Math.min(maxUnits, useCase.maxUnitsCap);
   }
@@ -30,5 +35,4 @@ export function compute({
     byEnergy: Math.max(0, byEnergy),
     maxUnits
   };
-
 }
