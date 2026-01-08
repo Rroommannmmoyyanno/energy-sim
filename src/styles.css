@@ -122,3 +122,61 @@ h1 {
   font-size: 15px;
 }
 
+/* ===== INDUSTRIAL SERIOUS THEME ===== */
+
+body {
+  background: #0f141a;
+  color: #e6ebf2;
+}
+
+.badge {
+  background: rgba(59, 130, 246, 0.12); /* azul técnico */
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  color: #cfe3ff;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 24px;
+  letter-spacing: -0.3px;
+}
+
+.card {
+  background: #121821;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.45);
+}
+
+.kpi .v {
+  font-size: 26px;
+  font-weight: 700;
+  color: #e6ebf2;
+}
+
+.kpi:first-child .v {
+  color: #60a5fa; /* potencia */
+}
+
+.kpi:nth-child(2) .v {
+  color: #93c5fd; /* energía */
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+.item {
+  border-left: 4px solid #3b82f6;
+}
+
+.item h3 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+small {
+  opacity: 0.7;
+}
+

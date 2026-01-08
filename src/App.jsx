@@ -41,12 +41,15 @@ export default function App() {
       <div className="badge">
         ⚡ Energy Simulator — Motor + Generator → kW/kWh → Real-world output
       </div>
-
-      <h1 style={{ marginTop: 12 }}>SimEnergy — Simulador de generación y usos productivos</h1>
+<h1 style={{ marginTop: 12 }}>
+  SimEnergy — Industrial Energy & Production Simulator
+</h1>
 <p>
-  Seleccionás un motor y un generador, ajustás condiciones de operación y obtenés potencia (kW) y energía (kWh).
-  Con eso, la app propone escenarios de uso y capacidad estimada por rubro.
+  Herramienta de simulación para análisis preliminar de generación eléctrica y
+  usos productivos. Permite evaluar potencia disponible (kW), energía (kWh) y
+  capacidad operativa según configuración de motor y generador.
 </p>
+
 
       <div className="grid" style={{ marginTop: 16 }}>
         <div className="card">
