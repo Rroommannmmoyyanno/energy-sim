@@ -84,3 +84,41 @@ hr { border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 14px 0; }
 .item .max { margin-top: 8px; font-weight: 700; }
 
 small { opacity: 0.75; }
+
+/* ====== Visual polish ====== */
+
+h1 {
+  font-size: 26px;
+  letter-spacing: -0.5px;
+}
+
+.badge {
+  font-weight: 600;
+}
+
+.kpi .v {
+  font-size: 28px;
+  color: #22c55e; /* verde energía */
+}
+
+.kpi:nth-child(2) .v {
+  color: #38bdf8; /* azul energía */
+}
+
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 40px rgba(0,0,0,0.45);
+}
+
+.item {
+  border-left: 4px solid #22c55e;
+}
+
+.item h3 {
+  font-size: 15px;
+}
+
