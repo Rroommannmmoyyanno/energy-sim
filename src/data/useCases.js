@@ -17,13 +17,14 @@ export const USE_CASES = [
     kwhDayPerUnit: 140,
     outputText: (units) => `Volumen típico: ${units} × (20–30 m³ aprox.)`
   },
- {
+{
   id: "textile",
   category: "Textil",
   name: "Industrial Sewing Stations",
   unit: "estación",
   kwPeakPerUnit: 1.2,
   kwhDayPerUnit: 8,
+  maxUnitsCap: 50, // 👈 límite industrial real
   outputText: (units) =>
     `Capacidad operativa estimada: hasta ${Math.min(units, 50)} estaciones de costura`
 }
